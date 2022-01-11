@@ -1,0 +1,14 @@
+<h3>Añadir</h3>
+<hr>
+
+<form (ngSubmit)="agregar()">
+    <!-- Parentesis es para emitir o escuchar eventos-->
+    <!-- corchetes son para establecer alguna propiedad al objeto -->
+    <!-- [value]="nuevo.nombre" (input)="cambiarNombre($event)" -->
+    <input type="text" placeholder="Nombre" name="nombre" [(ngModel)]="nuevo.nombre" />
+    <input type="number" placeholder="Poder" name="poder" [(ngModel)]="nuevo.poder" />
+    <button type="submit">
+        Agregar
+    </button>
+
+</form>

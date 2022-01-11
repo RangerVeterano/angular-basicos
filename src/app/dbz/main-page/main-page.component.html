@@ -1,0 +1,13 @@
+<h1>Dragon ball Z</h1>
+<hr>
+<div class="row">
+    <div class="col">
+        <!-- el primer personaje hace referencia al personaje dentro del componente personajes -->
+        <!-- el segundo personaje hace referecia al arreglo de personajes de nuestro componente actual -->
+        <!-- Esto es la comunicacion de padre a hijo -->
+        <app-personajes></app-personajes>
+    </div>
+    <div class="col">
+        <app-nuevo [nuevo]="nuevo"></app-nuevo>
+    </div>
+</div>
